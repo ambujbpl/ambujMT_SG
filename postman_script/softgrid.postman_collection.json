@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "dcdb2fae-f37e-4c95-a9d0-37f4d7ef3c53",
+		"name": "softgrid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/pingServerByPartners?id=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pingServerByPartners?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pingServerByPartners"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "ping Server By Partners 2"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/pingServerByPartners?id=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/pingServerByPartners?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pingServerByPartners"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "ping Server By Partners 1"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getCounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/getCounts?dateTime=2021-02-05 21:39:04",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getCounts"
+					],
+					"query": [
+						{
+							"key": "dateTime",
+							"value": "2021-02-05 21:39:04"
+						}
+					]
+				},
+				"description": "get Counts with or without date time filter"
+			},
+			"response": []
+		}
+	]
+}

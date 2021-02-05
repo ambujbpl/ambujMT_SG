@@ -1,0 +1,25 @@
+--------------------------Import Database backup on mysql server-----------
+
+1) create new database having name softgrid
+2) go to sql folder and run mysql -u(your_user_name) -p(your_password) softgrid < softgrid.sql
+3) set your local mysql details on api/config/config.js file 
+    "host": "localhost",
+    "user": "your_user_name",
+    "password": "your_password",
+    "database": "softgrid",
+
+
+-----------How to run the application---------------------------------------
+1) Go to api folder.
+2) Inject node dependency by using command :- npm install
+3) Run the server by using command :- npm start
+4) Browse application using :- http://localhost:3000
+5) To consume api's for Multiple partner visit counter:
+
+  [a] for partner 1 :- http://localhost:3000/pingServerByPartners?id=1
+  [b] for partner 2 :- http://localhost:3000/pingServerByPartners?id=2
+
+6) We can use get Api from Browser or postman as well using :-  
+  http:localhost:3000/getCounts?dateTime=2021-02-05 21:39:04
+
+7) I have also attached postman script to test this api's  

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softgrid Dashboard</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="moment.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<style type="text/css">
+  th,td {
+    border: 1px solid black;
+    padding: 10px; 
+  }
+</style>
+<body>
+  <center>
+    <h1>SoftGrid Dashboard </h1>
+    <div class="tableArea"><span style="color: green">Please wait for result...............<span></div>
+    <form style="margin-top: 25px;">
+      <label for="datetime">Filter by (date/time):</label>
+      <input type="datetime-local" id="datetime" name="datetime">
+      <input type="submit" onclick="applyFilter(event);">
+    </form>
+    <h2 style="margin-top: 25px;color: red;">Ambuj Dubey</h2>
+  </center>
+</body>
+</html>
