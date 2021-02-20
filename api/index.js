@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const axios = require('axios');
 const bodyParser = require('body-parser');
 const app = express();
 const port =  process.env.PORT ||3000;
@@ -55,14 +54,6 @@ app.get('/getCounts', async (req, res) => {
       message: 'Something went wrong'
     });
   });
-  // res.json({'data':{
-  //   'Basic Salary' : basicSalaryAmount,
-  //   'Overtime' : totalOverTimeAmount,
-  //   'Bonus' :bonusAmount,
-  //   'Total Salary(Male)' :maleTotal,
-  //   'Total Salary(Female)' :femaleTotal,
-  //   'Total Salary' :totalSalary,
-  // }});
 })
 
 app.get('/pingServerByPartners', (req,res) => {
